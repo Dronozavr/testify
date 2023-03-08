@@ -10,6 +10,7 @@ import { UserRepository } from './repositories/user.repository';
     ])
   ],
   providers: [UserRepository],
+  exports: [UserRepository]
 })
 export class UserModule {}
 
