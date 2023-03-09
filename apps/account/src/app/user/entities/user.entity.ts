@@ -13,6 +13,7 @@ export class UserEntity implements IUser {
         this.displayName = user.displayName;
         this.email = user.email;
         this.role = user.role;
+        this.passwordHash = user.passwordHash;
     }
 
     public async setPassword(password: string) {
