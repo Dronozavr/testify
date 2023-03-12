@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@testify/contracts": ["libs/contracts/src/index.ts"],
       "@testify/interfaces": ["libs/interfaces/src/index.ts"]
     }
   },
