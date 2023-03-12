@@ -15,8 +15,8 @@ export class UserRepository {
         return newUser.save();
     }
 
-    async findUser(email: string) {
-        return this.userModel.findOne({ email }).exec();
+    async findUser(value: string, field = 'email') {
+        return this.userModel.findOne({ [field]: value }).exec();
     }
 
     async deleteUser(email: string) {
